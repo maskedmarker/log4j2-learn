@@ -1,0 +1,5 @@
+log4j与slf4j配合使用
+slf4j探测log实现框架是通过在classpath定位是否有具体的实现类(org/slf4j/impl/StaticLoggerBinder.class)
+具体实现为: org.slf4j.LoggerFactory.findPossibleStaticLoggerBinderPathSet方法
+
+假如log4j要与slf4j配合使用,则log4j就要实现类一个名称为org.slf4j.impl.StaticLoggerBinder的类
